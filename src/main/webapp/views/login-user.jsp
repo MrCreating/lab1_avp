@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-    <title>LogIn page</title>
-</head>
+<jsp:include page="template.jsp">
+    <jsp:param name="title" value="Login Page"/>
+</jsp:include>
 <body>
 <form method="post">
     <h1>LogIn page!</h1>

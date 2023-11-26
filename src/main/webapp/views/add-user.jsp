@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Submit</title>
-    </head>
+    <jsp:include page="template.jsp">
+        <jsp:param name="title" value="Submit"/>
+    </jsp:include>
     <body>
     <form method="post">
     <h1>Submit page!</h1>
