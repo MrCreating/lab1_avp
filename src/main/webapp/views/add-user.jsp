@@ -26,7 +26,7 @@
                 <li>
                     <div class="collapsible-header">Add new user</div>
                     <div class="collapsible-body" style="background-color: white">
-                        <form method="post" style="padding: 20px">
+                        <form method="post">
                             <div>
                                 <div class="input-field">
                                     <input id="login" type="text" name="login">
