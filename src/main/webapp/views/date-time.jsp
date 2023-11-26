@@ -1,5 +1,5 @@
 <html>
-<jsp:include page="template.jsp">
+<jsp:include page="../templates/head.jsp">
   <jsp:param name="title" value="Date Time"/>
 </jsp:include>
 <body>
