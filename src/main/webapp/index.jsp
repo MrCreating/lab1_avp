@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>JSP - Hello World</title>
-</head>
-<body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
-<br/>
-<a href="login-user">Login user</a>
-</body>
+    <jsp:include page="templates/head.jsp">
+        <jsp:param name="title" value="Home Page"/>
+    </jsp:include>
+    <body>
+
+    </body>
 </html>

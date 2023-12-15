@@ -23,6 +23,8 @@ public class SubmitUserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("users", UserTable.getUsers());
+
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/add-user.jsp");
         requestDispatcher.forward(req, resp);
     }
@@ -32,12 +34,12 @@ public class SubmitUserServlet extends HttpServlet {
         String login = req.getParameter("login");
         String password = req.getParameter("pass");
 
-
         User user = new User(login, password);
 
         boolean submitFlag = UserTable.addUser(user);
 
         req.setAttribute("submitFlag", submitFlag);
+        req.setAttribute("users", UserTable.getUsers());
         req.getRequestDispatcher("views/add-user.jsp").forward(req, resp);
     }
 }

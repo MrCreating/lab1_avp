@@ -4,7 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class UserTable {
-    private static Map<String, User> users = new HashMap<>();
+    private static final Map<String, User> users = new HashMap<>();
+
+    public static Map<String, User> getUsers () {
+        return users;
+    }
 
     public static boolean addUser(User user) {
         String login = user.getLogin();
